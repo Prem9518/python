@@ -1,0 +1,542 @@
+Python :
+----------
+It is high-level, interpreted, OOP programming language.
+
+Human written code(print, input...)
+|
+|Compilation (Syntax Errors)
+|
+Byte code (common)
+|
+|interpretation(line by line)
+|
+Machine code 
+
+Python file(.py) --> code --> execute the file
+Terminal --> python filename.py
+
+Print 
+----------
+>> To show a data at the output.
+Ex: print(data)
+
+Input 
+------
+>> to prompt data from user.
+>> it always return string.
+Ex: input(defStr)
+
+Syntax:
+--------
+>> It is case-sensitive.
+>> Indentation matters.(whitespace before a line of code(to define a block of code))
+
+Comments 
+----------
+>> comments are ignored by python.
+>> It increases readability.
+# ---> single line comment
+''' ''' --> multi line comments
+
+Variables 
+---------
+>> named memory that stores a data.(dynamically typed)
+varName=data
+
+Naming Rules
+---------------
+>> can contain letters, numbers, _.
+>> cannot start with numeric.
+>> cannot be reserved keyword
+
+Datatypes 
+----------
+to find dat6atype of an object --> type(obj)
+Integer --> whole numbers. 2,1,3,0,-1,-2..
+Float --> decimal numbers. Ex: 1.0, 3.33...
+
+String --> Sequence of chars. '', "".
+Operation:
+concatination --> str1+str2 --> str1str2
+repetition --> str*3
+
+immutable 
+ordered indexed
+
+In built methods 
+-------------------
+.upper()
+.lower()
+.title()
+.capitalize()
+
+.find(subStr)  -1 (not found)
+.count(subSub)
+
+.split(char)  str --> multiple parts..[]
+.join(iterObj)
+
+.isalpha()
+.isdigit()
+.isalnum()
+.
+.
+
+Formatted String --> f"  {var1}  {var2}"
+
+"It's me"
+'I am "Leo"'
+
+Boolean --> True, False
+
+Type casting 
+-------------
+int(obj)
+str(obj)
+float(obj)
+bool(obj)
+
+Operators 
+----------
+>> Symbol or keywords that performs operation on values.
+
+2 + 3 = 5
+
+decimal --> 0-9.
+binary --> 01 
+
+D      B
+--------------
+0   -   0
+1   -   1
+2   -   10
+3   -   11
+4   -   100
+5   -   101
+6   -   110
+7   -   111
+.
+.
+.
+999 -   ?
+
+bit --> smallest unit of memory
+1 byte --> 8 bits.
+
+
+Arithmetic Operators 
+-----------------------
++ --> Addition
+- --> Subtraction 
+* --> Mul 
+/ --> Div 
+// --> Floor Div 
+% --> Mod (Reminder) 55%3 --> 18*3 --> 54
+** --> Exponentiation
+
+BODMAS 
+
+Comparison Operators (Boolean Value)
+-----------------------
+== equal 
+!= not equal  
+< lesser than
+> greater than 
+<= lesser than or equal
+>= greater than or equal
+
+Logical Operators  Boolean --> Boolean 
+----------------------------------------
+and --> True --> Both are True. False --> Otherwise.
+or  --> True --> atleast 1 should be True.
+not --> inverts a bool
+
+Assignment Operator 
+---------------------
+= assign 
++= add and assign
+-= sub and assign
+*= mul and assign 
+/= div and assign
+//= floor div and assign 
+%= mod and assign 
+**= exponentiate and assign
+
+Bitwise operators
+--------------------
+And - & 
+Or - |
+Not - ~ (~n=-(n+1)) 
+X-or --> ^ 1--> not same. 0 --> same
+Right shift --> >>
+Left shift --> <<
+
+2's comp --> 1's comp + 1
+Binary Addition
+------------------
+00 --> 0
+10,01 --> 1
+11 --> 10
+111 --> 11
+
+Membership 
+-------------
+in, not in
+
+Identity 
+----------
+is, is not 
+
+Mutable Objects --> List, Set, Dict. (No Reuse)
+Immutable ---> Int, Float, String, Tuple, Bool.(Reuse)
+
+Iterable Object 
+--------------------
+It is an object that can loop over using a for loop.
+
+Sequence
+----------
+>> Ordered collection of data. it can return its members 1 by 1.
+Ex: String, List, Tuple, Dict, range...
+
+To find length of a seq --> len(seq)
+
+indexing
+---------
+index number starts from 0.
+Ex: a="World" a[3] --> 'l'
+negative indexing starets from -1
+
+slicing
+--------
+>> Extracting part of sequence.
+>> l1=[1,2,3,4,5,6] --> [4,5,6]
+(1,2,3,4,5) --> (2,3)
+"Hello" --> "Hell"
+
+Seq[start:]
+Seq[:end]
+Seq[start:end]
+Seq[start:end:step]
+Seq[::-1]
+
+Control Flow Statements 
+------------------------
+>> Conditional Clause Statement 
+>> Looping Statement
+
+Conditional Clause
+-------------------
+if 
+----
+syntax:
+---------
+if cond:
+    block of code
+
+True --> execute the block. False --> skip.
+
+elif:
+-----
+syntax:
+----------
+elif condition:
+    block of code 
+
+True --> execute the block. False --> skip.
+
+else:
+---------
+Syntax:
+---------
+else:
+    block of code
+
+False --> execute the block. True --> skip.
+
+Nested If 
+----------------
+if cond1:
+    if cond2:
+        block of code
+
+Looping Statements
+--------------------
+while --> condition based loop
+for --> sequence based loop
+
+While (no of iteration not known)
+--------
+>> It is a condition based loop.
+
+Syntax:
+----------
+while condition:
+    block of code
+
+as long as the condition is True it will execute the block of code.
+
+For 
+-------
+>> It is a sequence based loop.
+>> iterates through a sequence.
+
+Syntax:
+--------
+for var in sequence:
+    block of code
+
+Range 
+------
+range(len) --> range(5) --> [0,1,2,3,4]
+range(start, end) --> range(4,14) --> [4,5,6....13]
+range(start, end, step) --> range(2,20,2) --> [2,4,6,8....18]
+
+Control Statements of loops 
+-----------------------------
+break --> stop the loop.
+continue --> skip the current iteration.
+
+Data Structure 
+----------------
+>> Collection of data.
+
+List 
+------
+>> [ele1,ele2.....]
+>> Ordered.
+>> Indexed.
+>> Mutable.
+>> Allows duplicates.
+
+In built methods 
+----------------
+.append(ele)
+.insert(pos,ele)
+.extend(iterObj) 
+
+.remove(ele)
+.pop(ind)
+.pop() #returns popped element
+
+.index(ele)
+.count(ele)
+
+.reverse()
+.sort()
+
+Tuple 
+------
+>> (ele1,ele2....)
+>> Ordered.
+>> Indexed.
+>> Immutable.
+>> Allows duplicates.
+
+In built Methods 
+--------------------
+.index(ele)
+.count(ele)
+
+Unpacking 
+-----------
+(List, Tuple)
+person=(1,2,3)
+a=person[0]
+b=person[1]
+c=person[2]
+a,b,c=person
+
+Set --> Unordered
+------------------
+>>{ele1,ele2...}
+>>Unordered
+>>Mutable 
+>>No Duplicates.
+
+In built methods 
+--------------------
+.add(ele)
+.remove(ele)
+.union(set)
+.intersection(set)
+.difference(set)
+
+Dict
+------
+>> {key:ele1,key:ele2,.....}
+>> Ordered
+>> not indexed 
+>> Mutable 
+>> Allows dupliace values. keys should be unique.
+
+In built methods 
+-----------------
+.pop(key)
+.keys()
+.values()
+.items()
+
+Functions
+------------
+>> Reusable block of code.
+
+In built Functions ---> print, input, len......
+User defined Function ---> def...
+
+Syntax
+---------
+def fnName(p1,p2....):
+    block of code
+
+Calling --> fnName()
+
+Parameters and Arguments 
+-------------------------
+p --> it is variable created in function defenition without value.
+a --> values passed to parameters
+
+Types of Arguments and Parameters 
+-----------------------------------
+Positional Arguments 
+----------------------
+>> Order matters
+
+Keyword Arguments 
+---------------------
+>> pass arguments along with keywords.
+
+Default Parameter 
+------------------
+>> parameter created with default values
+
+Variable Length Argument 
+---------------------------
+>> *parameterName (Tuple)
+>> **parametername (Dict)
+>> it is used when you don't know the number opf arguments going to be passed.
+
+Return Keyword 
+---------------
+>> Stops a function.
+>> it returns a value to the caller.
+
+Scope 
+----------
+>> It means where a variable can be accessed.
+
+Local Scope ---> variable created in a function 
+Global Scope --> variables created outside any function.
+Enclosing Scope --> Occurs with nested function.
+Built in Scope --> will be accessible anywhere(print, input....)
+
+File Handling 
+---------------
+>> Using python to create, open, read, write and modify a file.
+Ex: .txt, .csv, .json, binary....
+
+To open a file --> open(path, mode)
+
+In built Methods
+----------------
+.read()
+.readline()
+.readlines()
+.tell()
+.seek(pos)
+
+.write(content)
+.writable()
+
+.close()
+
+Modes 
+-----
+Read --> "r"
+Write --> "w" (Over write) (create)
+Append --> "a" (create)
+Create --> "x"
+
+with open() as varName:
+    block of code
+
+Errors 
+---------
+>> Errors are problems that stop code from running properly.
+
+Syntax Errors 
+--------------
+>> when you make errors with syntax.
+Ex: SyntaxError, IndentationError.
+
+Runtime Errors (Exceptions)
+---------------
+>> These errors are caught during the runtime.
+Ex: TypeError,ValueError,ZeroDivisionError...
+
+Exception Handling 
+--------------------
+try:
+    block of code
+except Name:
+    handling block
+.
+.
+finally:
+    block of code
+
+
+OOP - Object Oriented Programming 
+----------------------------------
+>> It is a programming pattern that organizes the code using class and objects.
+
+Object ---> Real time entity.
+
+object --> information --> functionalities.
+           (attribute)     (method)
+
+Blueprint --> Objects
+class ---> instances(objects) obj1,obj2........
+
+Class 
+--------
+syntax 
+--------
+class Classname:
+    class __init__(self):
+        attribute defenition 
+    
+    attributes and methods
+
+Instances(Objects)
+--------------------
+Clsname()
+
+Attributes 
+------------
+Instance attributes ---> it can be accessible only from instances
+Class attributes --> it can be accessible from both class and objects.
+
+Methods 
+--------
+Instance Method --> when you wanna use instance attributes. (self)
+
+Class Method --->  when you wanna use class attributes. @classmethod (cls)
+
+Static Method --> @staticmethod
+
+Self 
+-----
+>> it refers to the own object.
+
+PIP --> package manager of Python 
+-------------------------------------
+install a package --> pip install packagename
+uninstall a package --> pip uninstall packagename 
+
+Pillairs Of OOP 
+------------------
+Abstraction 
+Poly 
+Encapsulation 
+Inheritance
